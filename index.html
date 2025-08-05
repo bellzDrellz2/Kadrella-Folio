@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js" defer></script>
+</head>
+
+
+<body>
+    <!-- Hero -->
+    <section class="hero" id="home"> 
+        <img src='Assets/purp-svg-char.svg' alt="Kadrella's Logo" class="logo">
+        <h1 class="header-1">Hi, I'm Drella, A Creative Developer with a Designers Eye</h1>
+        <p class="sub-head">Fashion-Forward Coder | MERN Stack | Human Centered Design</p>
+        <nav class="top-nav">
+            <select onchange="location.href=this.value;">
+                <option selected disabled>See What I've Built</option>
+                <option  value="#projects">Projects</option>
+            </select>
+        </nav>
+    </section>
+    <!-- End Hero Section -->
+
+    <!-- sticky nav -->
+     <section class="full-sticky-bar">
+        <nav class="bottom-nav">
+            <select onchange="location.href= this.value;" class="bottom-left" id="nav-select">
+                <option value="#home" >Start</option>
+                <option value="#about">About</option>
+                <option value="#contact">Contact</option>
+            </select>
+        </nav>
+
+        <div class="bottom-bar">
+            <div class="icon-wrapper">
+            <button id="restore-projects" style="display: none; background-color:#fdb4b4; border:none; cursor:pointer; margin-right: 10px;"></button>
+            <a href="https://www.instagram.com/" target="_blank" class="icon-link">
+                <img src="Assets/insta-i.svg" alt="Instagram Icon" class="icon-bar">
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank" class="icon-link">
+                <img src="Assets/linkdin-i.svg" alt="LinkedIn Icon" class="icon-bar">
+            </a>
+            <a href="https://github.com/" target="_blank" class="icon-link">
+                <img src="Assets/github-i.svg" alt="GitHub Icon" class="icon-bar">
+            </a>
+        </div>
+         <p class="bottom-text" id="clock">9:00  AM</p>
+        </div>
+        <div>
+        </div>
+    <!-- End sticky nav -->
+
+    <!-- Main/About Section -->
+    <div id="about-window" class="window-draggable">
+        <section class="about" id="about">
+        <h2 class="header-2">About Me</h2>
+        <p class="about-text">I am a full-stack developer with a passion for creating elegant and functional web applications. My journey in coding started with a fascination for how things work behind the scenes, and it has evolved into a love for crafting user-friendly experiences.
+        I specialize in the MERN stack, which allows me to build dynamic and responsive applications that are both powerful and easy to use. My approach to development is centered around human-centered design principles, ensuring that the end user has a seamless experience.</p>
+        </p>
+        <ul>
+             <li id="html" class="icons">
+                    <img src="Assets/html.svg" alt="HTML Icon" class="icon">
+                </li>
+                <li id="css" class="icons">
+                    <img src="Assets/css.svg" alt="CSS Icon" class="icon">
+                </li>
+                <li id="javascript" class="icons">
+                    <img src="Assets/javascript.svg" alt="JavaScript Icon" class="icon">
+                </li>
+                <li id="nodejs" class="icons">
+                    <img src="Assets/node.svg" alt="Node.js Icon" class="icon">
+                </li>
+        </ul>
+    </section>
+    <!-- End About Section -->
+    </div>
+    
+
+    <!-- Projects Section -->
+     <div id="projects-drag-id" class="projects-drag-cl">
+        <div class="window-header">
+            <h2 class="header-2">Projects</h2>
+            <div class="window-controls">
+                <button id="maximize-btn">o</button>
+                <button id="minimize-btn">-</button>
+                <button id="close-btn">x</button>
+            </div>
+            
+        </div>
+          
+            
+            <!-- Content Section -->
+             <div class="desktop-container">
+                <div class="icon-grid">
+                    <ul>
+                        <li id="ecommerce-app" class="icons">
+                            <img src="Assets/ecomm.svg" alt="Ecommerce App Icon" class="icon">
+                        </li>
+                        <li id="dashboard-app" class="icons">
+                            <img src="Assets/dashboard.svg" alt="Dashboard App Icon" class="icon">
+                        </li>
+                        <li id="crochet-app" class="icons">
+                            <img src="assets/crochet.svg" alt="Crochet App Icon" class="icon">
+                        </li>
+                    </ul>     
+                </div>
+             </div>
+             <div class="resizer" >
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 4.5 15 15m0 0V8.25m0 11.25H8.25" />
+                </svg>
+             </div> 
+
+             
+
+     </div>
+    <!-- End Projects Section -->
+
+<!-- Contact Form -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form class="contact-form" action="#" method="post">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send It</button>
+            </form>
+        </div>
+    </section>
+<!-- End Contact Form -->
+
+
+</body>
+</html>
